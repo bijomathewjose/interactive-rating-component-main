@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    min-height: 100vh;
+    min-width: 100vw;
+    max-height: 150px;
+    max-width: 150px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 415px;
+    height: 415px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 30px;
+}
+
+.container {
+    width: 415px;
+    height: 415px;
+    padding: 31px;
+    padding-right: 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media screen and (max-width:500px) {
+   main{
+     width: 90%;
+}
+.container{
+    width: 100%;
+}
+}
+
+.star,
+.stary {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.starInitial {
+    background-color: rgb(52, 62, 75);
+}
+
+.starOnClick {
+    background-color: hsl(217, 12%, 63%)
+}
+
+.stary:active {
+    background-color: hsl(25, 97%, 53%);
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.feedback {
+    font-size: 15px;
+    line-height: 157%;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 50px;
+}
+
+.button:active {
+    background-color: white;
+}
+
+.button:active .submit {
+    color: hsl(25, 97%, 53%);
+}
+
+.submit {
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.14em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.displayContainer {
+    display: none;
+}
+
+
+.ratingResult {
+    width: 170px;
+    height: 34px;
+    border-radius: 17px;
+    background-color: rgb(52, 62, 75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ratedVaue {
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(25, 97%, 35%);
+}
+
+.thanks {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.sent {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+}
+.setting{
+    align-items: center;
+}
